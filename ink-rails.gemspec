@@ -14,7 +14,12 @@ Gem::Specification.new do |gem|
   gem.description   = %q{Ink for Rails Asset Pipeline}
 
   gem.files         = `git ls-files`.split($/)
-  gem.files         += Dir['vendor/**/*']
+  gem.files         += Dir['vendor/assets/font/*']
+  gem.files         += Dir['vendor/assets/js/*']
+  gem.files         += Dir['vendor/assets/less/*']
+  gem.files         += Dir['vendor/assets/less/config/*']
+  gem.files         += Dir['vendor/assets/less/modules/*']
+  gem.files         += Dir['vendor/assets/less/modules/icons/*']
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
