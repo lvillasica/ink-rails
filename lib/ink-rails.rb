@@ -1,9 +1,7 @@
-require "ink-rails/version"
-require "rails"
+require 'rails'
 
 module Ink
   module Rails
-    class Engine < ::Rails::Engine
-    end
+    require 'ink/rails/engine' if defined?(Rails)
   end
 end
