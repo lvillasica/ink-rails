@@ -16,4 +16,5 @@ Gem::Specification.new do |spec|
   spec.files                = Dir["lib/**/*"] + Dir["vendor/**/*"] + ["README.md", "MIT-LICENSE"]
   spec.require_paths        = ["lib"]
   spec.post_install_message = "Don't forget to add '*= require ink' before '*= require_self' to your application.css"
+  spec.add_dependency "less-rails", "~> 2.5.0"
 end
