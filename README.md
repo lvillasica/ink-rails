@@ -1,30 +1,41 @@
 # ink-rails
 
 Ink for Rails Asset Pipeline.
-This branch (tpinto/ink-rails) is based of npestana's initial version.
+This branch (tpinto/ink-rails) is based of npestana and mutablesate's initial versions.
 
 ## Changelog
 
+* 2014-03-19: Updated Ink to 2.3.0
 * 2013-07-25: Updated Ink to 2.1.0
 
 ## Installation
 
-Add these lines to your application's Gemfile:
+Just add this line to your Gemfile:
 
-    gem 'commonjs', :git => 'git://github.com/vjpr/commonjs.rb', :branch => 'fix-require'
-	gem 'less', :git => 'git://github.com/vjpr/less.rb', :branch => '1.4.1', :submodules => true
-	gem 'less-rails'
-	gem 'ink-rails', :git => "git://github.com/tpinto/ink-rails"
+    gem 'ink-rails', github: "tpinto/ink-rails"
 
 And then execute:
 
-    $ bundle install
+    $ bundle
 
 ## Usage
 
 Add this lines to your application.css before "*= require_self":
 
 	*= require ink
+
+Create a file called `custom-ink.less` with this line:
+
+    @fonts-path: "/assets/";
+
+## Customise
+
+You can use `custom-ink.less` in order to customise your Ink templates as such:
+
+    @site-width: 100%;
+    @gutter-width: 1em;
+    @sans-serif-font-stack: Helvetica, Arial, sans-serif;
+    @table-cell-padding: 2px 6px;
 
 More information about Ink Framework at http://ink.sapo.pt/
 
