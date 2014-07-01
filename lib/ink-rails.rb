@@ -1,7 +1,11 @@
-require 'rails'
+require 'ink/rails/version'
 
 module Ink
   module Rails
-    require 'ink/rails/engine' if defined?(Rails)
+    class Engine < ::Rails::Engine      
+      #rake_tasks do
+      #  load "tasks/ink.rake"
+      #end 
+    end
   end
 end

@@ -5,6 +5,7 @@ This branch (tpinto/ink-rails) is based of npestana and mutablesate's initial ve
 
 ## Changelog
 
+* 2014-01-01: Updated Ink to 3.0.4
 * 2014-03-19: Updated Ink to 2.3.0
 * 2013-07-25: Updated Ink to 2.1.0
 
@@ -20,7 +21,7 @@ And then execute:
 
 ## Usage
 
-Add this lines to your application.css before "*= require_self":
+Add this line to your application.css before "*= require_self":
 
 	*= require ink
 
